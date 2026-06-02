@@ -13,7 +13,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #4a5f6f;
+    color: #2f4253;
     background-color: #f5f7fa;
 }
 
@@ -35,7 +35,7 @@ h2 {
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #5a8bb5;
+    color: #3c6f9c;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
 }
@@ -50,7 +50,7 @@ h4 {
 
 p {
     margin-bottom: 1rem;
-    color: #5a6f7f;
+    color: #405463;
 }
 
 a {
@@ -96,7 +96,7 @@ a:focus {
     border: 1px solid #5a8bb5;
     border-radius: 4px;
     background-color: rgba(90, 139, 181, 0.15);
-    color: #cbd7e3;
+    color: #27455f;
     font-weight: 600;
     text-decoration: none;
 }
@@ -136,7 +136,7 @@ header .site-title {
 
 .tagline {
     font-size: 1.1rem;
-    color: #5a7a8f;
+    color: #456075;
     margin: 0;
 }
 
@@ -203,6 +203,165 @@ main {
 .hero h2 {
     margin-top: 0;
     color: #34527a;
+}
+
+.section-kicker {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(90, 139, 181, 0.12);
+    color: #34527a;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-spotlight {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+    gap: 1.5rem;
+    align-items: center;
+    background: linear-gradient(135deg, #ffffff 0%, #eef5fb 100%);
+    padding: 2rem;
+    border-radius: 4px;
+    border: 1px solid #d0dce8;
+    border-left: 4px solid #5a8bb5;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.spotlight-copy p:last-child {
+    margin-bottom: 0;
+}
+
+.spotlight-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.spotlight-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 999px;
+    background: #e8f0f8;
+    color: #34527a;
+    border: 1px solid #c6d8e8;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.spotlight-visual {
+    position: relative;
+    min-height: 320px;
+    padding: 1rem;
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at top right, rgba(90, 139, 181, 0.18), transparent 40%),
+        linear-gradient(180deg, #f8fbff 0%, #e7f0f8 100%);
+    border: 1px solid #c8d7e6;
+    isolation: isolate;
+}
+
+.spotlight-orbit {
+    position: absolute;
+    inset: 14% 8% 10% 8%;
+    border: 1px dashed rgba(90, 139, 181, 0.35);
+    border-radius: 28px;
+    transform: rotate(-4deg);
+}
+
+.spotlight-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(6px);
+    border: 1px solid #d0dce8;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(42, 67, 99, 0.08);
+}
+
+.spotlight-main-card {
+    left: 10%;
+    right: 18%;
+    top: 18%;
+    padding: 1.35rem;
+}
+
+.spotlight-main-card::after {
+    content: '';
+    display: block;
+    height: 10px;
+    margin-top: 0.9rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #5a8bb5 0%, #88b6d8 58%, #d5e7f5 100%);
+}
+
+.spotlight-card-label,
+.spotlight-mini-label {
+    margin-bottom: 0.3rem;
+    color: #5a7a8f;
+    font-size: 0.9rem;
+}
+
+.spotlight-card-value,
+.spotlight-mini-value {
+    color: #2c4563;
+    font-weight: 700;
+}
+
+.spotlight-card-value {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.spotlight-card-note {
+    margin-bottom: 0;
+}
+
+.spotlight-mini-card {
+    width: 42%;
+    padding: 0.9rem 1rem;
+}
+
+.spotlight-top-card {
+    right: 4%;
+    top: 8%;
+}
+
+.spotlight-bottom-card {
+    left: 4%;
+    bottom: 8%;
+}
+
+.spotlight-visual::before,
+.spotlight-visual::after {
+    content: '';
+    position: absolute;
+    border-radius: 999px;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.spotlight-visual::before {
+    width: 92px;
+    height: 92px;
+    right: 8%;
+    bottom: 10%;
+    background: radial-gradient(circle, rgba(90, 139, 181, 0.32) 0%, rgba(90, 139, 181, 0.08) 65%, transparent 68%);
+}
+
+.spotlight-visual::after {
+    width: 54px;
+    height: 54px;
+    left: 9%;
+    top: 10%;
+    background: radial-gradient(circle, rgba(44, 69, 99, 0.18) 0%, rgba(44, 69, 99, 0.05) 68%, transparent 70%);
 }
 
 
@@ -580,7 +739,7 @@ input[type="checkbox"] {
 
 .form-note {
     font-size: 0.9rem;
-    color: #8a9fab;
+    color: #526779;
     margin-top: 1.5rem;
     padding-top: 1rem;
     border-top: 1px solid #d0dce8;
@@ -612,7 +771,7 @@ input[type="checkbox"] {
 
 .contact-method p {
     margin-bottom: 0;
-    color: #5a6f7f;
+    color: #425565;
 }
 
 
@@ -632,11 +791,11 @@ footer p {
 
 footer p:last-child {
     font-size: 0.9rem;
-    color: #5a7a8f;
+    color: #415b70;
 }
 
 body {
-    color: #d8e1ea;
+    color: #edf4fa;
     background-color: #0f1720;
 }
 
@@ -658,7 +817,7 @@ label,
 .tips-list li,
 .opportunities-table td,
 .tagline {
-    color: #b7c7d8;
+    color: #dbe6f1;
 }
 
 a {
@@ -697,12 +856,12 @@ nav {
 }
 
 .nav-list a {
-    color: #9ecbf0;
+    color: #e8f4fc;
 }
 
 .nav-list a:hover {
     background-color: #1a2b3b;
-    color: #d5ebff;
+    color: #ffffff;
 }
 
 .nav-list a.active {
@@ -792,7 +951,7 @@ input[type="tel"],
 select,
 textarea {
     background-color: #0f1b26;
-    color: #d8e1ea;
+    color: #edf4fa;
     border-color: #2a4257;
 }
 
@@ -820,7 +979,7 @@ textarea:focus {
 
 .btn-secondary {
     background-color: #2a4257;
-    color: #dce8f3;
+    color: #f2f8fd;
 }
 
 .btn-secondary:hover {
@@ -829,6 +988,7 @@ textarea:focus {
 
 .form-note {
     border-top-color: #2a4257;
+    color: #e6eef6;
 }
 
 footer {
@@ -839,7 +999,7 @@ footer {
 
 footer p,
 footer p:last-child {
-    color: #c3d6e7;
+    color: #eef5fb;
 }
 
 @media (max-width: 768px) {
@@ -1004,7 +1164,7 @@ label,
 .tips-list li,
 .opportunities-table td,
 .tagline {
-    color: #a8bccf;
+    color: #dbe6f1;
 }
 
 header,
@@ -1020,13 +1180,13 @@ nav {
 }
 
 .nav-list a {
-    color: #b8d5ee;
+    color: #e8f4fc;
     border-bottom-color: transparent;
 }
 
 .nav-list a:hover {
     background-color: rgba(119, 173, 223, 0.09);
-    color: #d8ebfb;
+    color: #ffffff;
 }
 
 .nav-list a.active {
@@ -1170,12 +1330,12 @@ body {
 }
 
 .nav-list a {
-    color: #c3cfdb;
+    color: #edf5fb;
 }
 
 .nav-list a:hover {
     background-color: rgba(148, 168, 188, 0.12);
-    color: #e1e9f1;
+    color: #ffffff;
 }
 
 .nav-list a.active,
@@ -1184,7 +1344,7 @@ h4,
 .hero h2,
 .update-item h3,
 .opportunities-table caption {
-    color: #cbd7e3;
+    color: #527796;
 }
 
 .hero,
@@ -1294,13 +1454,13 @@ textarea:focus {
     --bg-0: #ffffff;
     --bg-1: #f6fbff;
     --bg-2: #f0f6fb;
-    --line: #e6eef6;
-    --line-soft: #f0f6fb;
-    --text-strong: #0f2430;
-    --text: #223241;
-    --text-soft: #456f91;
+    --line: #acd3fb;
+    --line-soft: #a6d1f5;
     --accent: #0b6cff;
     --accent-strong: #0758c9;
+    --text-strong: #041524;
+    --text: #07212b;
+    --text-soft: #394f59;
 }
 
 body {
@@ -1320,20 +1480,6 @@ nav {
     border-bottom-color: var(--line);
     color: var(--text);
     backdrop-filter: none;
-}
-
-.nav-list a {
-    color: var(--accent);
-}
-
-.nav-list a:hover {
-    background-color: #d3e5f8;
-    color: var(--accent-strong);
-}
-
-.nav-list a.active {
-    border-bottom-color: var(--accent);
-    color: var(--text-strong);
 }
 
 .hero,
@@ -1406,12 +1552,6 @@ footer p {
     border-bottom-color: var(--accent);
 }
 
-:root {
-    --text-strong: #041524; 
-    --text: #07212b;        
-    --text-soft: #394f59;   
-}
-
 p,
 label,
 .stat-label,
@@ -1427,50 +1567,18 @@ label,
     color: var(--text-strong);
 }
 
-.nav-list a {
-    color: var(--text);
-}
-
-.nav-list a:hover {
-    color: var(--accent-strong);
-}
-
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-    color: var(--text);
-}
-
-
-.btn-secondary {
-    color: var(--text-strong);
-}
-
 header .site-title,
 .site-title {
     color: var(--accent-strong) !important;
 }
 
-.form-section legend,
-fieldset legend {
-    color: var(--text-strong);
-}
-
-
-:root {
-    --contact-text: var(--text);
-}
-
 .contact-method p {
-    color: var(--contact-text) !important;
+    color: var(--text) !important;
 }
 
 .form-section legend,
 fieldset legend {
-    color: var(--contact-text) !important;
+    color: var(--text-strong) !important;
 }
 
 body.overview-page {
