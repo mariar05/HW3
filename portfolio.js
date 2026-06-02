@@ -186,7 +186,7 @@ function collectProjectData() {
     return {
         name: document.getElementById('project-name').value.trim(),
         category: document.getElementById('project-category').value.trim(),
-       completionDate: new Date(document.getElementById('completion-date').value).toLocaleDateString('en-GB', {
+        completionDate: new Date(document.getElementById('completion-date').value).toLocaleDateString('en-GB', {
             year: 'numeric',
             month: 'long',
             day: 'numeric'
