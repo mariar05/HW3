@@ -159,7 +159,7 @@ nav {
 .nav-list a {
     display: block;
     padding: 1rem 1.5rem;
-    color: #5a8bb5;
+    color: #426f96;
     font-weight: 500;
     transition: background-color 0.15s ease, color 0.15s ease;
     text-decoration: none;
@@ -1330,7 +1330,7 @@ body {
 }
 
 .nav-list a {
-    color: #edf5fb;
+    color: #48789d;
 }
 
 .nav-list a:hover {
@@ -1344,7 +1344,7 @@ h4,
 .hero h2,
 .update-item h3,
 .opportunities-table caption {
-    color: #527796;
+    color: #3c6587;
 }
 
 .hero,
