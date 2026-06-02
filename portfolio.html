@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - CareerTrack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="portfolio-page">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <p class="site-title">CareerTrack</p>
+            <p class="tagline">Find, track, and organize your career opportunities</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="jobs.html">Opportunities</a></li>
+                <li><a href="contact.html">Apply</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-jump-wrap">
+        <div class="container">
+            <a href="#main-content" class="main-jump-btn">Jump to main content</a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <div class="container portfolio-layout">
+            <section class="hero portfolio-hero" aria-labelledby="portfolio-title">
+                <div>
+                    <p class="portfolio-kicker">Creative showcase</p>
+                    <h1 id="portfolio-title">Build and share your personal project portfolio</h1>
+                    <p>This page lets you add your own projects, validate them locally, and view them in a responsive table designed for keyboard and screen reader users.</p>
+
+                    <div class="portfolio-actions">
+                        <a href="#project-form-section" class="btn btn-primary">Add a project</a>
+                        <a href="#projects-section" class="btn btn-secondary">View projects</a>
+                    </div>
+
+                    <div class="portfolio-stat-strip" aria-label="Portfolio highlights">
+                        <article class="portfolio-stat-card">
+                            <p class="portfolio-stat-number">5+</p>
+                            <p class="portfolio-stat-label">Form controls with validation</p>
+                        </article>
+                        <article class="portfolio-stat-card">
+                            <p class="portfolio-stat-number">1</p>
+                            <p class="portfolio-stat-label">Accessible live project table</p>
+                        </article>
+                        <article class="portfolio-stat-card">
+                            <p class="portfolio-stat-number">95+</p>
+                            <p class="portfolio-stat-label">Target Lighthouse accessibility score</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="portfolio-preview" aria-label="Design preview">
+                    <article class="portfolio-preview-card">
+                        <p class="preview-eyebrow">Originality</p>
+                        <h2>Idea board</h2>
+                        <p>Use the form to capture the story behind each project, then publish it in a clean grid that works on mobile and desktop.</p>
+                    </article>
+                    <article class="portfolio-preview-card preview-accent">
+                        <p class="preview-eyebrow">Performance</p>
+                        <h2>Fast by design</h2>
+                        <p>Only a small amount of vanilla JavaScript powers the validation and table updates, so the page stays light and responsive.</p>
+                    </article>
+                    <article class="portfolio-preview-card">
+                        <p class="preview-eyebrow">Accessibility</p>
+                        <h2>Clear feedback</h2>
+                        <p>Each field has a visible label, an error message, and a shared focus style so the form is easy to use with a keyboard.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="form-section portfolio-form-section" id="project-form-section">
+                <h2>Add a project</h2>
+                <p>Complete the form below to store a project in the table. Required fields are validated before submission.</p>
+
+                <form id="project-form" class="application-form portfolio-form" novalidate>
+                    <fieldset>
+                        <legend>Project details</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="project-name">Project name <span class="required">*</span></label>
+                                <input id="project-name" name="projectName" type="text" autocomplete="off" required aria-describedby="project-name-hint project-name-error" data-error-target="project-name-error">
+                                <p class="field-hint" id="project-name-hint">Use a short, memorable title.</p>
+                                <p class="field-error" id="project-name-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-category">Project category <span class="required">*</span></label>
+                                <select id="project-category" name="projectCategory" required aria-describedby="project-category-hint project-category-error" data-error-target="project-category-error">
+                                    <option value="">Select a category</option>
+                                    <option value="web app">Web app</option>
+                                    <option value="landing page">Landing page</option>
+                                    <option value="dashboard">Dashboard</option>
+                                    <option value="design system">Design system</option>
+                                    <option value="research">Research project</option>
+                                </select>
+                                <p class="field-hint" id="project-category-hint">Pick the closest match for the project.</p>
+                                <p class="field-error" id="project-category-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="completion-date">Completion date <span class="required">*</span></label>
+                                <input id="completion-date" name="completionDate" type="date" required aria-describedby="completion-date-hint completion-date-error" data-error-target="completion-date-error">
+                                <p class="field-hint" id="completion-date-hint">Use the date the project was finished.</p>
+                                <p class="field-error" id="completion-date-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-url">Project URL <span class="required">*</span></label>
+                                <input id="project-url" name="projectUrl" type="url" inputmode="url" placeholder="https://example.com" required aria-describedby="project-url-hint project-url-error" data-error-target="project-url-error">
+                                <p class="field-hint" id="project-url-hint">Link to a live demo, repo, or published page.</p>
+                                <p class="field-error" id="project-url-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="project-summary">Project summary <span class="required">*</span></label>
+                                <textarea id="project-summary" name="projectSummary" rows="5" required aria-describedby="project-summary-hint project-summary-error" data-error-target="project-summary-error"></textarea>
+                                <p class="field-hint" id="project-summary-hint">Describe what the project does and why it matters.</p>
+                                <p class="field-error" id="project-summary-error" aria-live="polite"></p>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Project media and technologies</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="technologies">Technologies used <span class="required">*</span></label>
+                                <input id="technologies" name="technologies" type="text" placeholder="HTML, CSS, JavaScript" required aria-describedby="technologies-hint technologies-error" data-error-target="technologies-error">
+                                <p class="field-hint" id="technologies-hint">Separate tools or languages with commas.</p>
+                                <p class="field-error" id="technologies-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="thumbnail-url">Thumbnail image URL <span class="required">*</span></label>
+                                <input id="thumbnail-url" name="thumbnailUrl" type="url" inputmode="url" placeholder="https://example.com/image.jpg" required aria-describedby="thumbnail-url-hint thumbnail-url-error" data-error-target="thumbnail-url-error">
+                                <p class="field-hint" id="thumbnail-url-hint">Use an image that represents the project.</p>
+                                <p class="field-error" id="thumbnail-url-error" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <div class="checkbox-field">
+                                    <input id="featured-project" name="featuredProject" type="checkbox" aria-describedby="featured-project-hint">
+                                    <label for="featured-project">Mark this project as featured</label>
+                                </div>
+                                <p class="field-hint" id="featured-project-hint">Featured projects are highlighted in the table once they are added.</p>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save project</button>
+                        <button type="reset" class="btn btn-secondary">Reset form</button>
+                    </div>
+
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+
+            <section class="portfolio-table-section" id="projects-section">
+                <h2>Projects table</h2>
+                <p>The table below shows the projects you add during this session, along with a few starter examples.</p>
+
+                <div class="table-scroll" tabindex="0" aria-label="Scrollable projects table">
+                    <table class="opportunities-table portfolio-table">
+                        <caption>Personal projects submitted through the portfolio form</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Project name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">URL</th>
+                                <th scope="col">Technologies</th>
+                                <th scope="col">Thumbnail</th>
+                                <th scope="col">Completion date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="projects-table-body">
+                            <tr>
+                                <th scope="row">Northstar Planner</th>
+                                <td>A task planning dashboard with a calm, accessible interface and quick status cards.</td>
+                                <td><a href="https://example.com" target="_blank" rel="noopener noreferrer">Live demo</a></td>
+                                <td>HTML, CSS, JavaScript</td>
+                                <td><img class="portfolio-thumbnail" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 80'%3E%3Crect width='120' height='80' rx='14' fill='%23eef5ff'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' fill='%230b6cff' font-size='16' font-family='Arial' font-weight='700'%3ENorthstar%3C/text%3E%3C/svg%3E" alt="Northstar Planner thumbnail" loading="lazy" decoding="async" width="120" height="80"></td>
+                                <td>March 18, 2026</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Studio Loom</th>
+                                <td>A responsive portfolio concept with motion, cards, and a content-first layout.</td>
+                                <td><a href="https://example.com" target="_blank" rel="noopener noreferrer">Live demo</a></td>
+                                <td>Semantic HTML, CSS Grid, Vanilla JS</td>
+                                <td><img class="portfolio-thumbnail" src="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 80'%3E%3Crect width='120' height='80' rx='14' fill='%23dfeeff'/%3E%3Ctext x='50%25' y='52%25' text-anchor='middle' fill='%230758c9' font-size='16' font-family='Arial' font-weight='700'%3EStudio%3C/text%3E%3C/svg%3E" alt="Studio Loom thumbnail" loading="lazy" decoding="async" width="120" height="80"></td>
+                                <td>April 2, 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Internship & Jobs Tracker Dashboard.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js" defer></script>
+</body>
+</html>

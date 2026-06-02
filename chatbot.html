@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - CareerTrack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body class="chatbot-page">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="container">
+            <p class="site-title">CareerTrack</p>
+            <p class="tagline">Find, track, and organize your career opportunities</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="jobs.html">Opportunities</a></li>
+                <li><a href="contact.html">Apply</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="chatbot.html" class="active">Chatbot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content" class="chatbot-page">
+        <div class="container">
+            <section class="hero">
+                <h1>CareerTrack Chatbot</h1>
+                <p>Ask a question, get a response from the local question bank, and keep the conversation moving with simple DOM updates.</p>
+            </section>
+
+            <section class="chatbot-shell">
+                <article class="chatbot-window">
+                    <h2>Conversation</h2>
+                    <div id="chat-feed" class="chatbot-feed" aria-live="polite" aria-label="Chat conversation"></div>
+
+                    <form id="chat-form" class="chatbot-form">
+                        <label for="chat-input">Type your question</label>
+                        <textarea id="chat-input" name="chat-input" rows="3" placeholder="Ask about deadlines, skills, projects, or the site..." required></textarea>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                            <button type="button" id="clear-chat" class="btn btn-secondary">Clear chat</button>
+                        </div>
+                    </form>
+                </article>
+
+                <aside class="chatbot-sidebar">
+                    <h2>Suggested questions</h2>
+                    <div class="suggested-questions" id="suggested-questions" aria-label="Suggested questions"></div>
+                    <p class="chatbot-meta">
+                        <span class="meta-pill">Question bank</span>
+                        <span class="meta-pill">Submit form</span>
+                        <span class="meta-pill">Auto scroll</span>
+                    </p>
+                </aside>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Internship & Jobs Tracker Dashboard.</p>
+        </div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+</html>

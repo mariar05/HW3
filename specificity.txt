@@ -1,0 +1,84 @@
+
+1) Ce proprietati primeste fiecare paragraf si de unde vin
+
+Paragraful A (<p>Paragraph A</p>)
+- Se aplica doar selectorul de element p.
+- Proprietati finale (toate din p):
+  - color: gray
+  - font-size: 1rem
+  - font-family: Georgia, serif
+  - line-height: 1.4
+  - padding: 4px 0
+
+Paragraful B (<p class="info">Paragraph B</p>)
+- Se aplica p si .info.
+- Clasa .info are prioritate peste selectorul de element p.
+- Proprietati finale:
+  - color: steelblue (din .info)
+  - font-size: 1.25rem (din .info)
+  - font-family: Arial, sans-serif (din .info)
+  - line-height: 1.4 (din p)
+  - padding: 8px 14px (din .info)
+  - background-color: #e8f4fd (din .info)
+  - border-left: 5px solid steelblue (din .info)
+
+Paragraful C (<p id="warning">Paragraph C</p>)
+- Se aplica p si #warning.
+- Selectorul de id (#warning) are prioritate peste p.
+- Proprietati finale:
+  - color: darkred (din #warning)
+  - font-size: 0.8rem (din #warning)
+  - font-family: 'Courier New', monospace (din #warning)
+  - line-height: 1.4 (din p)
+  - padding: 10px (din #warning)
+  - font-style: italic (din #warning)
+  - text-transform: uppercase (din #warning)
+  - letter-spacing: 0.15em (din #warning)
+  - border: 2px dashed darkred (din #warning)
+  - background-color: #fff0f0 (din #warning)
+
+Paragraful D (<p class="info" id="warning">Paragraph D</p>)
+- Se aplica toate regulile: p, .info, #warning, #warning.info.
+- Proprietati finale:
+  - color: darkorange (din #warning.info)
+  - font-size: 1.1rem (din #warning.info)
+  - font-family: 'Courier New', monospace (din #warning)
+  - line-height: 1.4 (din p)
+  - padding: 10px (din #warning)
+  - background-color: #fff7e0 (din #warning.info)
+  - border: 2px solid darkorange (din #warning.info)
+  - font-style: normal (din #warning.info)
+  - text-transform: uppercase (din #warning)
+  - letter-spacing: 0.03em (din #warning.info)
+
+2) De ce la paragraful D castiga anumite valori
+
+Color:
+- p are specificitate mica.
+- .info este mai specific decat p.
+- #warning este mai specific decat .info.
+- #warning.info este cel mai specific dintre toate (id + clasa).
+- De aceea browserul foloseste color: darkorange.
+
+Font-family:
+- p seteaza Georgia.
+- .info seteaza Arial.
+- #warning seteaza 'Courier New'.
+- #warning.info nu seteaza deloc font-family.
+- Castiga #warning, deci ramane 'Courier New', monospace.
+
+3) h1 extern vs h1 intern (conform variantei actuale)
+
+In style.css exista regula externa pentru h1:
+- color: #1f6f8b
+- font-style: italic
+- padding: 10px
+
+In specificity.html:
+- exista link la style.css;
+- exista <h1>title1</h1> in body;
+- exista regula interna h1 in <style> care schimba culoarea (color: #b22222).
+
+Rezultat in browser:
+- Culoarea titlului vine din regula interna (h1 din specificity.html), pentru ca are aceeasi specificitate ca regula externa, dar este declarata mai tarziu.
+- font-style si padding raman din style.css, pentru ca regula interna modifica doar culoarea.

@@ -1,0 +1,370 @@
+/* Section 7 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+left: 100px;
+top: 100px;
+
+
+
+/* Frame 7 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+
+
+/* Frame 6 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: rgba(238, 244, 250, 0.7);
+
+
+/* Group 7 */
+
+position: absolute;
+width: 1210px;
+height: 597px;
+left: 100px;
+top: 100px;
+
+
+
+/* Sing in to continue to your dashboard */
+
+position: absolute;
+width: 249px;
+height: 17px;
+left: 985px;
+top: 201px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #5F6F82;
+
+
+
+/* Email adress */
+
+position: absolute;
+width: 84px;
+height: 17px;
+left: 943px;
+top: 281px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #111111;
+
+
+
+/* Password */
+
+position: absolute;
+width: 65px;
+height: 17px;
+left: 944px;
+top: 390px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+
+/* Welcome back to CareerTrack */
+
+position: absolute;
+width: 289px;
+height: 73px;
+left: 981px;
+top: 100px;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 53px;
+display: flex;
+align-items: center;
+
+color: #111111;
+
+
+
+/* Rectangle 5 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 368px;
+height: 50px;
+left: 942px;
+top: 509px;
+
+background: #397EC4;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+/* or continue */
+
+position: absolute;
+width: 75px;
+height: 17px;
+left: 1080px;
+top: 581px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #5F6F82;
+
+
+
+/* Line 3 */
+
+position: absolute;
+width: 340px;
+height: 0px;
+left: 956px;
+top: 589.5px;
+
+border: 1px solid #5F6F82;
+transform: rotate(0.08deg);
+
+
+/* Sign in */
+
+position: absolute;
+width: 64px;
+height: 24px;
+left: 1093px;
+top: 522px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+
+/* Sign in with Google */
+
+position: absolute;
+width: 149px;
+height: 19px;
+left: 1060px;
+top: 627px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #5F8FC0;
+
+
+
+/* material-icon-theme:google */
+
+position: absolute;
+width: 18px;
+height: 18px;
+left: 1029px;
+top: 627px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 7.81%;
+right: 7.74%;
+top: 6.25%;
+bottom: 6.29%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.18%;
+right: 20.05%;
+top: 6.25%;
+bottom: 58.72%;
+
+background: #F44336;
+opacity: 0.99;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.81%;
+right: 73.41%;
+top: 30.73%;
+bottom: 30.52%;
+
+background: #FFC107;
+opacity: 1;
+
+
+/* Vector */
+
+position: absolute;
+left: 50.76%;
+right: 7.74%;
+top: 41.91%;
+bottom: 16.94%;
+
+background: #448AFF;
+opacity: 1;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 20.72%;
+top: 58.26%;
+bottom: 6.29%;
+
+background: #43A047;
+opacity: 0.99;
+
+
+/* Don’t have an account? */
+
+position: absolute;
+width: 155px;
+height: 17px;
+left: 963px;
+top: 680px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #5F6F82;
+
+
+
+/* Create account */
+
+position: absolute;
+width: 121px;
+height: 19px;
+left: 1147px;
+top: 678px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: #397EC4;
+
+
+
+/* name@example.com */
+
+position: absolute;
+width: 156px;
+height: 19px;
+left: 963px;
+top: 320px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: rgba(95, 111, 130, 0.73);
+
+
+
+/* Enter your password */
+
+position: absolute;
+width: 154px;
+height: 19px;
+left: 961px;
+top: 429px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+
+color: rgba(95, 111, 130, 0.73);
+

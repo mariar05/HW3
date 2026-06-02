@@ -1,0 +1,37 @@
+.chatbot-sidebar h2,
+.chatbot-window h2 {
+    margin-bottom: 1rem;
+}
+
+.chatbot-form label {
+    font-weight: 600;
+}
+
+.chatbot-form textarea {
+    min-height: 92px;
+    resize: vertical;
+}
+
+.chatbot-feed .message p {
+    margin-bottom: 0;
+}
+
+.chatbot-sidebar {
+    position: sticky;
+    top: 5.5rem;
+}
+
+.chatbot-sidebar .suggested-questions {
+    margin: 0 0 1rem;
+}
+
+.chatbot-sidebar .question-chip {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    border-radius: 14px;
+}
+
+.chatbot-sidebar .question-chip:hover {
+    background: rgba(119, 173, 223, 0.14);
+}
