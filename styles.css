@@ -794,10 +794,7 @@ footer p:last-child {
     color: #415b70;
 }
 
-body {
-    color: #edf4fa;
-    background-color: #0f1720;
-}
+/* Removed accidental dark-theme override to restore intended light color scheme */
 
 h1,
 h2 {
@@ -1108,7 +1105,6 @@ footer p:last-child {
     }
 }
 
-/* Responsive improvements: mobile-friendly nav, flexible grids and images */
 .nav-list {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1120,7 +1116,6 @@ footer p:last-child {
     white-space: nowrap;
 }
 
-/* Home spotlight collapses to a single column on small screens */
 @media (max-width: 900px) {
     .home-spotlight {
         grid-template-columns: 1fr;
@@ -1134,7 +1129,6 @@ footer p:last-child {
     }
 }
 
-/* Portfolio layout becomes single column on narrow viewports */
 @media (max-width: 800px) {
     .portfolio-layout {
         display: block;
@@ -1152,14 +1146,11 @@ footer p:last-child {
     }
 }
 
-/* Make images responsive by default */
 img {
     max-width: 100%;
     height: auto;
     display: inline-block;
 }
-
-/* Keep thumbnail size reasonable on small screens */
 @media (max-width: 480px) {
     .portfolio-thumbnail {
         width: 140px;
@@ -1168,7 +1159,6 @@ img {
     }
 }
 
-/* Ensure tables stay scrollable on small viewports */
 .table-scroll {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
