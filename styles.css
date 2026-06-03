@@ -1108,6 +1108,72 @@ footer p:last-child {
     }
 }
 
+/* Responsive improvements: mobile-friendly nav, flexible grids and images */
+.nav-list {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.nav-list::-webkit-scrollbar {
+    height: 6px;
+}
+.nav-list a {
+    white-space: nowrap;
+}
+
+/* Home spotlight collapses to a single column on small screens */
+@media (max-width: 900px) {
+    .home-spotlight {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .spotlight-visual {
+        min-height: 220px;
+        border-radius: 12px;
+        padding: 0.75rem;
+    }
+}
+
+/* Portfolio layout becomes single column on narrow viewports */
+@media (max-width: 800px) {
+    .portfolio-layout {
+        display: block;
+    }
+
+    .portfolio-preview {
+        margin-top: 1rem;
+    }
+
+    .portfolio-stat-strip {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Make images responsive by default */
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* Keep thumbnail size reasonable on small screens */
+@media (max-width: 480px) {
+    .portfolio-thumbnail {
+        width: 140px;
+        max-width: 40%;
+        height: auto;
+    }
+}
+
+/* Ensure tables stay scrollable on small viewports */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 :root {
     --bg-0: #0b1118;
     --bg-1: #111a24;
@@ -1631,6 +1697,39 @@ body.overview-page .overview-card {
 body.overview-page .overview-card.featured {
     border-color: rgba(11, 108, 255, 0.22);
     background: linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+}
+
+/* Hover and focus styles for overview page elements */
+body.overview-page .overview-card {
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.15s ease;
+}
+
+body.overview-page .overview-card:hover,
+body.overview-page .overview-card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(16, 30, 45, 0.09);
+    border-color: rgba(11, 108, 255, 0.28);
+}
+
+body.overview-page .badge,
+body.overview-page .skill-pill {
+    transition: transform 0.12s ease, background 0.12s ease;
+}
+
+body.overview-page .badge:hover,
+body.overview-page .skill-pill:hover,
+body.overview-page .badge:focus,
+body.overview-page .skill-pill:focus {
+    transform: translateY(-3px);
+    background: linear-gradient(180deg, #eef9ff 0%, #e3f0ff 100%);
+    cursor: pointer;
+    outline: none;
+}
+
+body.overview-page .badge:focus-visible,
+body.overview-page .skill-pill:focus-visible {
+    box-shadow: 0 0 0 4px rgba(11, 108, 255, 0.12);
+    border-radius: 999px;
 }
 
 body.overview-page .overview-cards,
